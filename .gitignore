@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+/client/node_modules/
+/server/node_modules/
+
+# Production build outputs
+/client/dist/
+
+# Local Environment Variables & Keys
+.env
+.env.*
+!.env.example
+# Explicitly documented for contributors; the two rules above already cover it.
+/server/.env
+/client/.env
+
+# OS Metadata
+.DS_Store
+Thumbs.db
