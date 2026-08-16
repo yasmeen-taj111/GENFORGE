@@ -12,7 +12,7 @@ Unlike tools that invent impressive-sounding claims, GenForge keeps the user in 
 | --- | --- |
 | Live demo | Add your public deployed-app URL here |
 | Demo video | Add your public video URL here |
-| Source code | Add your public GitHub repository URL here |
+| Source code | https://github.com/yasmeen-taj111/GENFORGE |
 
 > Before submitting, replace the three placeholders above with your real public links and confirm that they open in an incognito browser window.
 
@@ -205,30 +205,4 @@ GENFORGE/
 └── README.md
 ```
 
-## Security and GitHub checklist
-
-The root `.gitignore` protects environment files in all subfolders, including `server/.env`. The pattern `.env` has no slash, so Git applies it recursively—not only next to `.gitignore`.
-
-Before your first public push, run these commands from the project root:
-
-```bash
-git init                 # only if this folder is not already a Git repository
-git check-ignore -v server/.env
-git status --ignored
-git add .
-git status
-```
-
-`git check-ignore -v server/.env` should print a rule from `.gitignore`, and `git status` should **not** list `server/.env` under files to be committed. Commit `server/.env.example`, but never commit the real `.env` file or any API key.
-
-If a secret was ever committed or pushed before adding `.gitignore`, ignoring it now is not enough. Remove it from Git tracking with `git rm --cached server/.env`, rotate the exposed API keys immediately, and then commit the removal.
-
-## Future improvements
-
-- Add automated unit and integration tests for API routes and scoring logic.
-- Add more accessible template controls and export validation.
-- Add deployment configuration and CI checks for linting and secret scanning.
-
-## License
-
-This project was created as an original submission for the GenForge Generative AI Mini Challenge.
+---
