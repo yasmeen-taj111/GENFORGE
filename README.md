@@ -10,8 +10,7 @@ Unlike tools that invent impressive-sounding claims, GenForge keeps the user in 
 
 | Item | Link |
 | --- | --- |
-| Live demo | Add your public deployed-app URL here |
-| Demo video | Add your public video URL here |
+| Demo video | https://www.youtube.com/watch?v=nuyvbuOjZL8 |
 | Source code | https://github.com/yasmeen-taj111/GENFORGE |
 
 > Before submitting, replace the three placeholders above with your real public links and confirm that they open in an incognito browser window.
